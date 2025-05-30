@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="main-section">
+
+
+
+        <nav class="navbar navbar-expand-lg  sticky-top ">
+
+            <div class="mx-auto" style="width: 80%;">
+                <div class="container-fluid">
+                    <img class="navbar-brand" src="logo.png">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">HOME </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Home Option 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Option 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">ABOUT </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Company</a></li>
+                                    <li><a class="dropdown-item" href="#">Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">SERVICES </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Web Design</a></li>
+                                    <li><a class="dropdown-item" href="#">SEO</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">OTHER PAGE </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">BLOG </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Latest Posts</a></li>
+                                    <li><a class="dropdown-item" href="#">Categories</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fw-bold p-3" href="#">CONTACT </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Email</a></li>
+                                    <li><a class="dropdown-item" href="#">Phone</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Hero Section -->
+
+        <div class="hero-text">
+            <div class="container">
+                <h1 class="display-4">Welcome to MyWebsite</h1>
+                <p class="lead">A fast, responsive website built with Bootstrap 5</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./blog_1.jpg " class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-center text-color">Ocean Freight</h5>
+                            <p class="card-text text-center">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout..</p>
+                            <div class="text-center my-3">
+                                <button class="btn custom-btn">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./blog_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-center text-color">Air Freight</h5>
+                            <p class="card-text text-center">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout..</p>
+                            <div class="text-center my-3">
+                                <button class="btn custom-btn">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./blog_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-center text-color">Street Freight</h5>
+                            <p class="card-text text-center">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout..</p>
+                            <div class="text-center my-3">
+                                <button class="btn custom-btn">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <!-- <section class="py-5 bg-light"> -->
+    <div class="container w-75 mx-auto">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://picsum.photos/800/300?random=4" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide One</h5>
+                        <p>Introductory message or marketing tagline.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://picsum.photos/800/300?random=5" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide Two</h5>
+                        <p>Showcase different features or user feedback.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://picsum.photos/800/300?random=6" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide Three</h5>
+                        <p>Promotional content or latest updates.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-dark text-light text-center py-4"> -->
+    <div class="container">
+        <p class="mb-1">&copy; 2025 MyWebsite. All rights reserved.</p>
+        <p class="mb-0">
+            <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+        </p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector("nav");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 0) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        });
+
+    </script>
+
+    <style>
+        nav.scrolled {
+            background-color: #4f5a6b !important;
+            /* darker or same */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</body>
+
+</html>

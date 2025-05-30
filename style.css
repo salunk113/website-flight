@@ -1,0 +1,112 @@
+
+
+
+
+
+
+.main-section {
+    position: relative;
+    z-index: auto;
+  }
+  
+
+
+.custom-btn {
+    background-color: #5d6b82;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  .custom-btn:hover {
+    background-color: #f39c12;
+    color: white;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+
+  .main-section {
+    background: url('slide_2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    /* background: transparent !important; */
+  }
+  
+  .hero-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-text h1,
+  .hero-text p {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: better readability */
+  }
+
+  .card {
+    border: none; /* Removes border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Adds subtle outer shadow */
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /* Optional: subtle hover lift effect */
+  }
+
+/* Make nav links bigger */
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* Show dropdown on hover */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: slideDown 0.3s ease forwards;
+    /* margin-top: 0.1rem; */
+  }
+
+  /* Dropdown style: black background and white text */
+  .dropdown-menu {
+    background-color: #000;
+    border: none;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .text-color{
+    color: #5d6b82;
+  }
+  .text-color:hover{
+    color: #f39c12;
+  }
+
+  /* Slide down animation */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
