@@ -1,4 +1,8 @@
-
+nav.scrolled {
+  background-color: #000 !important;
+  /* darker or same 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);*/
+}
 
 #contactSuccessMsg {
   font-weight: 500;
@@ -567,7 +571,7 @@ body {
   text-align: center;
 }
 
-.hero-section h1 {
+.hero-section h1,h2 {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 30px;
