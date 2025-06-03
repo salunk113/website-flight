@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN - must be before custom styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -16,14 +24,25 @@
 
 
 
-        <nav class="navbar navbar-expand-lg  sticky-top ">
 
-            <div class="mx-auto" style="width: 80%;">
-                <div class="container-fluid">
-                    <img class="navbar-brand" src="logo.png">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg  fixed-top">
+
+            <div class="mx-auto container d-flex width-setting" >
+                
+                    
+                        <img class="navbar-brand" src="logo.png">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span  class="navbar-toggler-icon "></span>
+                      </button>
+                      
+                          
+
+                    
+
+
+
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item dropdown">
@@ -68,20 +87,58 @@
                                     <li><a class="dropdown-item" href="#">Phone</a></li>
                                 </ul>
                             </li>
+                            <li class="not-need-item">
+                                <a href=""><i class="fa-solid fa-user p-3"
+                                        style="font-size: 15px; color: white;"></i></a>
+                            </li>
+                            <li class="not-need-item">
+                                <a href="#"><i class="fa-solid fa-magnifying-glass p-3"
+                                        style="font-size: 15px; color: white;"></i> </a>
+                            </li>
+                            <li class="not-need-item">
+                                <a href=""> <i class="fa-solid fa-bag-shopping p-3"
+                                        style="font-size: 15px; color: white;"></i></a>
+                            </li>
+                            <li class="not-need-item">
+                                <a href=""><i class="fa-solid fa-language p-3"
+                                        style="font-size: 15px; color: white;"></i></a>
+                            </li>
                         </ul>
                     </div>
-                </div>
+
+
+                    
+                        
+                    
+
+
+                
             </div>
 
         </nav>
         <!-- Hero Section -->
 
         <div class="hero-text">
-            <div class="container">
-                <h1 class="display-4">Welcome to MyWebsite</h1>
+            <div class="container display-container">
+                <h1 class="display-4 hero-heading">WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
                 <p class="lead">A fast, responsive website built with Bootstrap 5</p>
+                <a href="#" class="hero-btn">OUR SERVICE</a>
+                <a href="#" class="hero-btn">GET A QUOTE</a>
+
             </div>
+            <div class="slider-nav" id="slider">
+                <button class="nav-btn" id="prev">
+                    <i class="fa-solid fa-angle-left" style="font-size: 20px;"></i>
+                </button>
+                <button class="nav-btn" id="next">
+                    <i class="fa-solid fa-angle-right" style="font-size: 20px;"></i>
+                </button>
+            </div>
+
         </div>
+
+
+
     </div>
 
     <!-- Cards Section -->
@@ -138,9 +195,339 @@
         </div>
     </section>
 
+
+
+    <div class="container-form-section">
+
+
+        <div class="container py-5">
+            <div class="row">
+                <!-- Quote Form -->
+                <div class="col-md-5">
+                    <div class="quote-section">
+                        <h4 class="mb-4 fw-bold">GET A QUOTE</h4>
+                        <form id="contactForm">
+                            <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                            <div class="row g-2 mb-3">
+                                <div class="col"><input type="email" class="form-control" placeholder="Email" required></div>
+                                <div class="col"><input type="text" class="form-control" placeholder="Phone"></div>
+                            </div>
+                            <div class="row g-2 mb-3">
+                                <div class="col"><input type="text" class="form-control" placeholder="Type"></div>
+                                <div class="col"><input type="text" class="form-control" placeholder="Quantity"></div>
+                            </div>
+                            <input type="text" class="form-control mb-3" placeholder="Destination">
+                            <textarea class="form-control mb-3" rows="3" placeholder="Your Message..."></textarea>
+                            <button type="submit" class="btn btn-send">SEND</button>
+                        
+                            <!-- Success Message -->
+                            <div id="contactSuccessMsg" class="mt-3 text-success" style="display: none;"></div>
+                        </form>
+                        
+                    </div>
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="col-md-7 ps-md-5 pt-4 pt-md-0">
+                    <h3 class="info-heading">WE HAVE 25 YEARS EXPERIENCE IN THIS PASSION</h3>
+                    <p class="info-text mt-3">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                        If you are going to use a passage of Lorem Ipsum,
+                    </p>
+                    <a href="#" class="read-more">read more <i class="fa-solid fa-angle-right"></i></a>
+
+                    <!-- Stats -->
+                    <div class="d-flex justify-content-between flex-wrap mt-4">
+                        <div class="stat-box col-4">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div class="number">120</div>
+                            <p>Project Done</p>
+                        </div>
+                        <div class="stat-box col-4">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div class="number">100</div>
+                            <p>Project Done</p>
+                        </div>
+                        <div class="stat-box col-4">
+                            <i class="fa-solid fa-users"></i>
+                            <div class="number">30</div>
+                            <p>Project Done</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollUpBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    </div>
+
+
+    <div class="container-our-service">
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">OUR SERVICE</h2>
+                <div class="highlight-line"></div>
+                <p class="section-subtitle">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                </p>
+
+                <div class="row align-items-center">
+                    <!-- Left -->
+                    <div class="col-md-6 left-box">
+                        <h3>WE OFFER QUICK & POWERFUL LOGISTICS SOLUTION</h3>
+                        <div class="my-3" style="width: 40px; height: 2px; background: orange;"></div>
+                        <p>
+                            I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                            was born and I will give you.
+                        </p>
+                        <button class="btn btn-custom">Learn More</button>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-md-6 right-box">
+                        <h4>WHY CHOOSE US ?</h4>
+                        <div class="mb-3" style="width: 40px; height: 2px; background: white;"></div>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                            born and I will give you.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet, consectetur.</li>
+                            <li><i class="fa-solid fa-check"></i> Sed quia consequuntur magni dolores eos.</li>
+                            <li><i class="fa-solid fa-check"></i> Nemo enim ipsam voluptatem.</li>
+                            <li><i class="fa-solid fa-check"></i> We denounce with righteous indignation.</li>
+                        </ul>
+                        <button class="btn btn-light text-dark mt-3">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div class="service-section-two">
+
+        <section class="services-section" style="background-color: rgb(221, 222, 222);">
+            <div class="container-fluid">
+                <div class="row ">
+                    <!-- Left Image -->
+                    <div class="col-md-6 bg-image px-0">
+                        <img src="./images/2.jpg" alt="">
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-md-6 px-3 pt-3 new-container-mobile">
+                        <div class="service-item d-flex">
+                            <div class="hexagon-icon me-3">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <div>
+                                <h5 class="service-title">WARE HOUSE</h5>
+                                <p class="service-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam.
+                                </p>
+                                <a href="#" class="read-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="service-item d-flex">
+                            <div class="hexagon-icon me-3">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                            <div>
+                                <h5 class="service-title">ROAD FREIGHT</h5>
+                                <p class="service-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam.
+                                </p>
+                                <a href="#" class="read-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="service-item d-flex">
+                            <div class="hexagon-icon me-3">
+                                <i class="fa-solid fa-ship"></i>
+                            </div>
+                            <div>
+                                <h5 class="service-title">SEA FREIGHT</h5>
+                                <p class="service-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam.
+                                </p>
+                                <a href="#" class="read-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="service-item d-flex">
+                            <div class="hexagon-icon me-3">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div>
+                                <h5 class="service-title">AIR FREIGHT</h5>
+                                <p class="service-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam.
+                                </p>
+                                <a href="#" class="read-more">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <div class="container-support">
+
+
+        <section class="info-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Info Grid -->
+                    <div class="col-md-7 info-grid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="info-box">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-anchor"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="info-title">OUR LOCATION</h6>
+                                        <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="info-box">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-umbrella"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="info-title">24/7 SUPPORT</h6>
+                                        <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="info-box">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="info-title">LATEST NEWS</h6>
+                                        <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="info-box">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-bicycle"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="info-title">FAST DELEVERY</h6>
+                                        <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="col-md-5 right-img text-center">
+                        <img src="./promo_top_bg.png" alt="Forklift and packages" />
+                        <!-- Replace with your image path -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="section-one-div">
+        <section class="hero-section">
+            <div class="container">
+                <h1>We Provide International Freight & Logistics Service Worldwidw</h1>
+                <a href="#" class="btn btn-quote">Get a Quote</a>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="testimonials-container">
+
+
+        <section class="testimonial-section">
+            <h2>What Client’s Say</h2>
+            <div class="divider"></div>
+
+            <!-- Carousel -->
+            <div class="testimonial-wrapper text-center">
+                <div class="d-flex justify-content-center align-items-center mb-4" id="clientImages">
+                  <!-- Images will be injected here dynamically -->
+                </div>
+                <div class="quote-icon">❝</div>
+                <p class="testimonial-text" id="testimonialText"></p>
+                <div class="client-name" id="testimonialName"></div>
+                <div class="client-role" id="testimonialRole"></div>
+              
+                <div class="d-flex justify-content-center mt-3">
+                  <button id="prevBtn" class="btn btn-warning me-2"><span class="carousel-control-prev-icon"></span></button>
+                  <button id="nextBtn" class="btn btn-warning"><span class="carousel-control-next-icon"></span></button>
+                </div>
+            
+              
+
+                <!-- Carousel Controls -->
+                <!-- <button class="carousel-control-prev mx-3" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next mx-3" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button> -->
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     <!-- Carousel Section -->
     <!-- <section class="py-5 bg-light"> -->
-    <div class="container w-75 mx-auto">
+    <!-- <div class="container w-75 mx-auto">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -185,41 +572,115 @@
             </button>
         </div>
     </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <!-- <footer class="bg-dark text-light text-center py-4"> -->
-    <div class="container">
-        <p class="mb-1">&copy; 2025 MyWebsite. All rights reserved.</p>
-        <p class="mb-0">
-            <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
-            <a href="#" class="text-light text-decoration-none">Terms of Service</a>
-        </p>
-    </div>
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Newsletter Row -->
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="text-white fw-bold">Weekly Newsletter</h2>
+                    <p>There are many vaiations of passages of lorem ipsum available.</p>
+                </div>
+                <div class="col-md-4">
+                    <form id="subscribeForm" class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter Your Mail" required>
+                        <button class="btn btn-subscribe" type="submit">SUBSCRIBE</button>
+                    </form>
+                    <div id="subscribeMessage" class="mt-2 text-success" style="display:none;"></div>
+                </div>
+                
+            </div>
+
+            <hr class="mb-5" style="border-color: rgba(255,255,255,0.2);">
+
+            <!-- Footer Columns -->
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-3 mb-4">
+                    <h5>About Us</h5>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> +8801911854378</li>
+                        <li><i class="fa-solid fa-envelope"></i> backpiper.com@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Gazipur, 1704, Bangladesh. 1215.</li>
+                    </ul>
+                </div>
+
+                <!-- Latest Tweets -->
+                <div class="col-md-3 mb-4">
+                    <h5>Latest Tweets</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem.</li>
+                        <small>5 Minutes Ago</small>
+                        <li class="mt-3"><i class="fa-solid fa-phone"></i> Sed ut perspiciatis unde omnis iste natus
+                            error sit voluptatem.</li>
+                        <small>5 Minutes Ago</small>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-3 mb-4">
+                    <h5>Customer Service</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><i class="fa-solid fa-angle-right"></i> Support Forums</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Communication</li>
+                        <li><i class="fa-solid fa-angle-right"></i> FAQS</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Privacy Policy</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Rules & Condition</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-md-3 mb-4">
+                    <h5>Customer Service</h5>
+                    <div class="line"></div>
+                    <div class="gallery d-flex flex-wrap">
+                        <img src="./images/1.jpg" alt="img1">
+                        <img src="./images/2.jpg" alt="img2">
+                        <img src="./images/3.jpg" alt="img3">
+                        <img src="./images/4.jpg" alt="img4">
+                        <img src="./images/5.jpg" alt="img5">
+                        <img src="./images/6.jpg" alt="img6">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-4">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i
+                        class="fa-solid fa-heart text-danger"></i> by Colorlib</p>
+                <div class="social-icons mt-2">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector("nav");
 
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 0) {
-                    navbar.classList.add("scrolled");
-                } else {
-                    navbar.classList.remove("scrolled");
-                }
-            });
-        });
 
-    </script>
 
     <style>
         nav.scrolled {
-            background-color: #4f5a6b !important;
-            /* darker or same */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            background-color: #000 !important;
+            /* darker or same 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);*/
         }
     </style>
 
